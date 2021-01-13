@@ -1,9 +1,9 @@
-<h2> Resolução de Algoritmo </h2>
+## Resolução de Algoritmo
 
 Algoritmo do Coding Dojo baseado no minigame "Breach Protocol" de CP2077.
 
 RESOLUÇÃO DE ALGORITMO.
-<h3> Algoritmo e suas regras </h3>
+### Algoritmo e suas regras
 
 - Geração da Matriz: 
 	- A matriz deve ter elementos em posições aleatórias;
@@ -24,8 +24,8 @@ RESOLUÇÃO DE ALGORITMO.
 	- O movimento seguinte seguirá na linha (horizontal) do index da coluna marcada anteriormente;
 	- Assim sucessivamente até as três chaves serem preenchidas.
     
-# EXEMPLO:
-
+## EXEMPLO:
+```
 elementos = ["7A", "1C", "E7", "BD", "E9", "55", "FF"]
 
 matriz = [
@@ -37,11 +37,12 @@ matriz = [
 chave1 = ["E7", "55", "E9"]
 chave2 = ["55", "7A", "7A"]
 chave3 = ["7A", "7A", "E9"]
-
-resposta = [[0,0], [3,0], [3,2], [0,2], [0,1], [1,1], [1,0]]
-posições = [[55], [7A], [7A]**, [E9]***,[E7], [55], [E9]*]
+```
+- resposta = [[0,0], [3,0], [3,2], [0,2], [0,1], [1,1], [1,0]]
+- posições = [[55], [7A], [7A]**, [E9]***,[E7], [55], [E9]*]
 
 OBS:
 * = Fechou chave1
 ** = Fechou chave2
 *** = Fechou chave3
+
