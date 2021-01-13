@@ -1,27 +1,28 @@
-# algoritmo_minigame
-*Em desenvolvimento.
+<h2> Resolução de Algoritmo </h2>
 
 Algoritmo do Coding Dojo baseado no minigame "Breach Protocol" de CP2077.
 
 RESOLUÇÃO DE ALGORITMO.
+<h3> Algoritmo e suas regras </h3>
 
-	- PROBLEMA E REGRAS:
-		- MATRIZ COM VALORES GERADOS ALEATÓRIAMENTE;
-		- TODA MATRIZ TEM TRÊS CHAVES;
-		- CADA CHAVE POSSUI UMA SEQUENCIA DE ELEMENTOS PRÓPRIOS QUE DEVEM SER PREENCHIDOS EM ORDEM PARA RESOLUÇÃO DA CHAVE;
-		- A ORDEM DA RESOLUÇÃO DAS CHAVES NÃO IMPORTAM;
-		- A ORDEM DOS ELEMENTOS PERTENCENTES AS CHAVES DEVEM SER PREENCHIDOS EM ORDEM;
-		- A CHAVE REINICIA CASO O PREENCHIMENTO FOR INTERROMPIDO POR UM CÓDIGO DISTINTO DE SUA ORDEM;
-		- CASO OS ELEMENTOS DENTRO DE DUAS OU MAIS CHAVES SIGAM A MESMA ORDEM, ELES SERÃO PREENCHIDOS EM CONJUNTO,
-		RESPEITANDO A REGRA ANTERIOR.
-	
-	- MOVIMENTO:
-		- O PRIMEIRO MOVIMENTO SEMPRE DEVE OCORRER NA PRIMEIRA LINHA;
-		- O ALGORITMO DEVE MARCAR UM CÓDIGO DE CHAVE;
-		- O MOVIMENTO APAGARÁ O VALOR NO INDEX ALI ESTABELECIDO;
-		- O PRÓXIMO MOVIMENTO DEVE OCORRER NA COLUNA DO INDEX ATUALMENTE MARCADO;
-		- O MOVIMENTO SEGUINTE, SEGUIRÁ NA HORIZONTAL DO INDEX DA COLUNA MARCADO ANTERIORMENTE;
-		- ASSIM SUCESSIVAMENTE, ATÉ AS TRÊS CHAVES SEREM PREENCHIDAS.
+- Geração da Matriz: 
+	- A matriz deve ter elementos em posições aleatórias;
+	- Toda matriz gerada deve ter três chaves para sua resolução;
+	- Toda matriz gerada deve possuir chaves válidas para resolução;
+	- Cada chave possui uma série de elementos;
+	- A resolução de uma chave ocorre quando todos os elementos são marcados;
+	- Um elemento é marcado quando sua posição é exposta pelo requerente;
+	- Quando marcado, o elemento em sua matriz recebe o valor de zero, e não poderá ser usado novamente.
+	- A ordem da resolução das chaves não é importante;
+	- A ordem dos elementos pertencentes as chaves devem ser preenchidos em ordem;
+	- A chave reinicia ao primeiro valor, caso seu preenchimento seja interrompido por um código distinto de sua ordem;
+	- Caso os elementos de duas ou mais chaves sigam a mesma ordem, eles serão preenchidos em conjunto, respeitando a regra anterior.
+
+- Regra de movimento para resolução:
+	- O primeiro movimento sempre deve ocorrer na primeira linha (horizontal;
+	- O próximo movimento deve ocorrer na coluna (vertical) do index atualmente marcado;
+	- O movimento seguinte seguirá na linha (horizontal) do index da coluna marcada anteriormente;
+	- Assim sucessivamente até as três chaves serem preenchidas.
     
 # EXEMPLO:
 
@@ -38,7 +39,7 @@ chave2 = ["55", "7A", "7A"]
 chave3 = ["7A", "7A", "E9"]
 
 resposta = [[0,0], [3,0], [3,2], [0,2], [0,1], [1,1], [1,0]]
-posições   = [[55], [7A], [7A]**, [E9]***,[E7], [55], [E9]*]
+posições = [[55], [7A], [7A]**, [E9]***,[E7], [55], [E9]*]
 
 OBS:
 * = Fechou chave1
