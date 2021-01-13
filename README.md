@@ -1,7 +1,7 @@
 # algoritmo_minigame
 *Em desenvolvimento.
 
-Algoritmo p/ Coding Dojo baseado no minigame "Breach Protocol" de CP2077.
+Algoritmo do Coding Dojo baseado no minigame "Breach Protocol" de CP2077.
 
 RESOLUÇÃO DE ALGORITMO.
 
@@ -25,18 +25,20 @@ RESOLUÇÃO DE ALGORITMO.
     
 # EXEMPLO:
 
-elementos = ["7A", "1C",  "E7", "BD", "E9", "55", "FF"]
+
+'''
+elementos = ["7A", "1C", "E7", "BD", "E9", "55", "FF"]
 
 matriz = [
 	["55", "E7", "E9"],
 	["E9", "55", "FF"],
 	["BD", "FF", "BD"],
-	["7A", "55", "7A"]
-]
-
+	["7A", "55", "7A"]]
+	
 chave1 = ["E7", "55", "E9"]
 chave2 = ["55", "7A", "7A"]
 chave3 = ["7A", "7A", "E9"]
+'''
 
 resposta = [[0,0], [3,0], [3,2], [0,2], [0,1], [1,1], [1,0]]
 posições   = [[55], [7A], [7A]**, [E9]***,[E7], [55], [E9]*]
