@@ -25,8 +25,6 @@ RESOLUÇÃO DE ALGORITMO.
     
 # EXEMPLO:
 
-
-'''
 elementos = ["7A", "1C", "E7", "BD", "E9", "55", "FF"]
 
 matriz = [
@@ -38,7 +36,6 @@ matriz = [
 chave1 = ["E7", "55", "E9"]
 chave2 = ["55", "7A", "7A"]
 chave3 = ["7A", "7A", "E9"]
-'''
 
 resposta = [[0,0], [3,0], [3,2], [0,2], [0,1], [1,1], [1,0]]
 posições   = [[55], [7A], [7A]**, [E9]***,[E7], [55], [E9]*]
